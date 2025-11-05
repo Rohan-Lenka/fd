@@ -36,6 +36,7 @@ import { BannerModule } from './apis/banner/banner.module';
 import { SupportTicketsModule } from './apis/supportTickets/supportTickets.module';
 import { FaqModule } from './apis/faq/faq.module';
 import { ProductVarientModule } from './apis/productVarient/productVarient.module';
+import { RedisModule } from './services/redis/redis.module';
 
 config();
 @Module({
@@ -74,6 +75,7 @@ config();
     SupportTicketsModule,
     FaqModule,
     ProductVarientModule,
+    RedisModule
   ],
   providers: [
     AppService,
